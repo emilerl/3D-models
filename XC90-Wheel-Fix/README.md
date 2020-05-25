@@ -7,6 +7,8 @@ First I tried to print a "collar" to go around the piece and keep the pins in pl
 So I instead decided to create a spacer and use an external circlip and a washer to keep the wheel in place. This thing is the result and it works like a charm.
 The OpenSCAD file is attached for easy modification.
 
+![Final product](https://github.com/emilerl/3D-models/blob/master/XC90-Wheel-Fix/Wheel%20Fix%20-%201.jpeg?raw=true)
+
 You will need to buy 4x M5 washers (specifically with a outer diameter of 23.5mm and 2.4 mm deep, unless you want to adjust the design) and 4x external circlips for a 12mm axel.
 
 ## Print Settings
@@ -22,3 +24,5 @@ You will need to buy 4x M5 washers (specifically with a outer diameter of 23.5mm
 
 Notes:
 I printed it standing up (with the extruded section facing down) with supports. See the attached image for reference.
+
+![Model with supports](https://github.com/emilerl/3D-models/blob/master/XC90-Wheel-Fix/Print%20Orientation%20with%20Supports.png?raw=true)
