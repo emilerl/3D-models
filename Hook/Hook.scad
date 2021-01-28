@@ -1,6 +1,12 @@
 $fa = 1;
 $fs = 0.4;
 
+width = 5;
+height = 5;
+outer_r1 = 25;
+outer_r2 = 10;
+inner_r1 = outer_r1 - 2 * width;
+assymetric = true; 
 
 module hook_part(outer_radius, inner_radius, quadrant_degrees = 0) {
 
@@ -58,12 +64,9 @@ module extruded_assymetric_hook(outer_r1, outer_r2, width, height) {
     asymetric_hook_outline(outer_r1, outer_r2, width);    
 }
 
-
 color("red")
-
-translate([40,0,0])
-extruded_assymetric_hook(25,10,5, 5);
-
-
-color("red")
-extruded_hook(15,10,5);
+if(assymetric) {
+    extruded_assymetric_hook(outer_r1,outer_r2,width, height);
+} else {
+    extruded_hook(outer_r1,inner_r1,height);
+}
